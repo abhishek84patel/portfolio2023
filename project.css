@@ -1,0 +1,80 @@
+.project {
+  min-height: 100vh;
+}
+.box {
+  width: 270px;
+  height: 370px;
+  /* margin: 0 auto; */
+
+  border-radius: 20px;
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
+    inset -5px -5px 5px rgba(255, 255, 255, 0.05),
+    5px 5px 5px rgb(0, 0, 0, 0.05), -5px -5px 5px rgba(255, 255, 255, 0.05);
+}
+.box2 {
+  height: 410px;
+}
+.frist-card {
+  height: 412px;
+  margin-top: 50px;
+}
+.card {
+  width: 250px;
+  height: 350px;
+  background-color: rgb(250, 249, 248);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+  top: 10px;
+  margin-inline: auto;
+  /* margin: 100px auto; */
+  text-align: center;
+  padding: 5px 20px;
+  transition: all ease 1s;
+}
+
+.card p {
+  /* padding-top: 30px; */
+  padding-bottom: 45px;
+}
+
+.card h3 {
+  text-transform: capitalize;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.card button {
+  background-color: #03a9f4;
+  color: white;
+  padding: 3px 15px;
+  border-radius: 20px;
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+
+.card:hover {
+  transform: translatey(-75px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.card:hover.card button {
+  background-color: #f9004d;
+}
+
+.card:hover.card h3::first-letter {
+  color: rgb(250 249 248);
+  font-size: larger;
+  font-family: cursive;
+  border-radius: 5px;
+}
+
+.f1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}

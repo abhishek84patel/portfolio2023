@@ -1,0 +1,130 @@
+.skill {
+  min-height: 100vh;
+  padding-top: 50px;
+  display: grid;
+  align-items: center;
+
+}
+.skill-bar {
+  max-width: 500px;
+  margin-inline: auto;
+  /* height: 100vh; */
+  /* display: flex;
+    align-items: center; */
+  /* justify-content: center; */
+  padding: 10px;
+
+  font-size: 17px;
+}
+
+.skill-bar .bar {
+  margin: 20px 0;
+}
+
+.progress-line {
+  background-color: #f0f0f0;
+  box-shadow: inset 0px 1px 1px rgba(0 0 0 / 5%),
+    0px 1px 1px rgba(255, 255, 255, 0.08);
+  height: 10px;
+  width: 100%;
+  position: relative;
+  border-radius: 10px;
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.progress-line span {
+  height: 100%;
+  /* width: 80%; */
+  background: #6665ee;
+  position: absolute;
+  /* border-radius:10px ; */
+  transform-origin: left;
+  transform: scaleX(0);
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.progress-line.html span {
+  width: 80%;
+  /* background: rgb(230, 91, 114); */
+}
+
+.progress-line.css span {
+  width: 70%;
+}
+
+.progress-line.javscript span {
+  width: 65%;
+  /* background-color: rgb(230, 91, 114); */
+}
+
+.progress-line.boot span {
+  width: 70%;
+}
+
+.progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-color: #000;
+  top: -10px;
+  right: 0;
+  opacity: 0;
+  animation: showtext2 0.5s 1.5s linear forwards;
+}
+.info {
+  opacity: 0;
+  animation: showtext2 0.5s 1.5s linear forwards;
+  /* color: white; */
+  font-weight: 700;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.progress-line span::after {
+  position: absolute;
+  /* content: "80%"; */
+  right: 0;
+  top: -28px;
+  padding: 1px 8px;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background: #000;
+  opacity: 0;
+  animation: showtext2 0.5s 1.5s linear forwards;
+}
+
+@keyframes showtext2 {
+  100% {
+    opacity: 1;
+  }
+}
+
+.progress-line.html span::after {
+  content: "80%";
+}
+
+.progress-line.css span::after {
+  content: "70%";
+}
+
+.progress-line.javscript span::after {
+  content: "65%";
+}
+
+.progress-line.boot span::after {
+  content: "70%";
+}

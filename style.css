@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home1 {
+  background: linear-gradient(purple, #6c5ce7);
+  min-height: 100vh;
+  color: white;
+}
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  text-transform: capitalize;
+}
+h2 span {
+  color: rgb(238, 70, 70);
+}
+.container {
+  /* max-width: 90%;
+  margin: 0 auto; */
+  padding: 0 16px;
+}
+.nav-content {
+  width: 100%;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-transform: capitalize;
+}
+.nav-content .right-side ul {
+  display: flex;
+}
+.nav-content .right-side ul > li {
+  list-style: none;
+}
+.nav-content .right-side > ul > li > a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  padding: 0px 12px;
+  cursor: pointer;
+  color: white;
+}
+.nav-content .right-side > ul > li > a:hover {
+  color: rgba(231, 225, 225, 0.81);
+    text-decoration: underline;
+    transition: 0.2s ease-in;
+    font-weight: 500;
+}
+button {
+  font-size: 1.2rem;
+  padding: 5px 12px;
+  border-radius: 40px;
+  box-shadow: -1px 4px 5px 1px rgb(5 5 5 / 70%);
+  border: none;
+  font-weight: 500;
+  width: fit-content;
+  text-transform: capitalize;
+  background-color: rgb(240, 65, 65);
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(140, 74, 167);
+  transition: all 0.5s ease-in-out;
+}
+/* main content start in styles */
+.home-content {
+  /* height: 100vh; */
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.home-content > h2 {
+  font-size: 2rem;
+}
+.home-content > p,
+h4 {
+  margin-top: 15px;
+}
+.home-content > p:nth-child(1) {
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.home-content > p:nth-child(4) {
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+/* .home-content >button{
+ width: 8rem;
+ margin-top: 15px;
+ text-transform: capitalize;
+ border: none;
+ border-radius: 3px;
+ background-color: rgb(245, 83, 83);
+ color: white;
+ cursor: pointer;
+ font-size: 1.2rem;
+} */
+.about {
+  min-height: 100vh;
+}
+.about-contant {
+  display: flex;
+  justify-content: center;
+}
+.about h2 {
+  font-size: 2rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+.about h4 {
+  /* font-size: 2rem; */
+  text-align: center;
+  text-transform: capitalize;
+}
+.about-contant p {
+  max-width: 500px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+img {
+  max-width: 300px;
+  width: 100%;
+}
+.image {
+  text-align: center;
+}
+.material-symbols-outlined {
+  opacity: 0;
+}
+@media screen and (max-width: 768px) {
+  .nav-content .right-side,
+  .nav-content button {
+    display: none;
+  }
+  .material-symbols-outlined {
+    opacity: 1;
+  }
+}
+.wave {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 11rem;
+  width: 100%;
+  background: url(wave.png);
+  background-size: 100rem 11rem;
+  background-repeat: repeat-x;
+  animation: waves 10s linear infinite;
+  transition: all 0.2s ease-in-out;
+}
+@keyframes waves {
+  0% {
+    background-position-x: 0rem;
+  }
+  100% {
+    background-position-x: 100rem;
+  }
+}
+.wave-2 {
+  animation-direction: reverse;
+  opacity: 0.2;
+}
+.wave-3 {
+  animation-duration: 4s;
+  opacity: 0.5;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/*  */
+.form-top {
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+ 
+  justify-content: center;
+}
+.form-bg{
+  /* background-color: #6c5ce7; */
+  padding: 60px 16px;
+}
+.img-form{
+  width:100% ;
+  max-width: 500px;
+}
+.form {
+  background-color: rgba(215, 219, 219, 0.542);
+  max-width: 500px;
+  width: 100%;
+  /* height: 520px; */
+  padding: 20px ;
+  border-radius: 10px;
+  /* margin: 0 auto; */
+  /* text-align: -webkit-center; */
+}
+
+input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 0 5px;
+  width: 100%;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  resize: none;
+  text-transform: capitalize;
+  border-radius: 2px;
+  border: none;
+  outline: none;
+}
+
+input {
+  text-transform: capitalize;
+  /* font-size: 1.2rem; */
+  border: none;
+  height: 30px;
+  /* background-color: beige; */
+  outline: none;
+  border-radius: 2px;
+}
+
+
+label {
+  text-transform: capitalize;
+  padding-bottom: 10px;
+  display: block;
+}
+
+.form-button {
+  border: none;
+  background-color: rgba(252, 17, 88, 0.965);
+  color: aliceblue;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+@media screen and (max-width:320px) {
+  .wave{
+    height: 5rem;
+  }
+}
